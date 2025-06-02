@@ -1,0 +1,14 @@
+### Additional functions
+
+#### 1.	As a user, I want the system to perform comparison checks, combination checks, and multilayer QC flags so that data quality is thoroughly assessed.
+o	Definition of Done:
+	Comparison checks, combination checks, and multilayer QC flags are implemented and functional.
+	Data quality is assessed and reported.
+	Logs confirm the functionality of these checks.
+o	Acceptance Criteria:
+	Verify that comparison checks, combination checks, and multilayer QC flags are functional.
+	Check logs for check entries.
+o	Priority: Medium
+o	Dependencies: QC checks
+
+

@@ -1,0 +1,16 @@
+roles:
+    - climate_data_analyst
+    - climate_researcher
+    - climate_scientist
+    - data_analyst
+    - data_entry_operator
+    - data_manager
+    - data_quality_manager
+    - data_user
+    - metadata_manager
+    - network_manager
+    - quality_control_manager
+    - system_administrator
+    - system_operator
+    - system_user
+

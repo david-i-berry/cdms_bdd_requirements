@@ -1,0 +1,139 @@
+### User interface
+
+#### Integrated search
+
+*As a* user, 
+*I want* to search for data and metadata through integrated observations and metadata search functions 
+*so that* I can find relevant information quickly.
+
+*Definition of Done:*
+
+* Integrated search functions are available and functional.
+* Users can find relevant data and metadata quickly.
+* Logs confirm the functionality of search tools.
+
+*Acceptance Criteria:*
+
+* Verify that integrated search functions are functional.
+* Check logs for search entries.
+
+*Priority:* High
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 7.1.4.2, 7.1.4.3, 7.1.4.4, 8.2.1.1, 8.2.1.2
+
+#### Visualisation
+
+*As a* user, 
+*I want* to visualize data via tables and graphs 
+*so that* I can interpret the data easily.
+
+*Definition of Done:*
+
+* Data visualization tools (tables and graphs) are available and functional.
+* Data is displayed accurately and clearly.
+* Logs confirm the functionality of visualization tools.
+
+*Acceptance Criteria:*
+
+* Verify that data visualization tools are functional.
+* Check logs for visualization entries.
+
+*Priority:* Medium
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 7.1.1.1, 7.1.1.2
+
+#### Support for OGC Web Mapping Service and Web Feature Service
+
+*As a* user, 
+*I want* to download data via WMS and WFS 
+*so that* I can use the data in other applications.
+
+*Definition of Done:*
+
+* Data download tools (WMS and WFS) are available and functional.
+* Users can download data in the specified formats.
+* Logs confirm the functionality of download tools.
+
+*Acceptance Criteria:*
+
+* Verify that data download tools are functional.
+* Check logs for download entries.
+
+*Priority:* Medium
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 8.1.1.1, 8.1.1.2
+
+#### Download in WMO Formats
+
+*As a* user, 
+*I want* to download data in WMO formats 
+*so that* I can work with standardized data formats.
+
+*Definition of Done:*
+
+* Data download in WMO formats is available and functional.
+* Users can download data in the specified formats.
+* Logs confirm the functionality of download tools.
+
+*Acceptance Criteria:*
+
+* Verify that data download in WMO formats is functional.
+* Check logs for download entries.
+
+*Priority:* Medium
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 8.3.1.1
+
+#### Custom queries
+
+*As a* user, 
+*I want* to use custom queries for data extraction 
+*so that* I can retrieve specific data as needed.
+
+*Definition of Done:*
+
+* Custom query tools are available and functional.
+* Users can retrieve specific data using custom queries.
+* Logs confirm the functionality of custom query tools.
+
+*Acceptance Criteria:*
+
+* Verify that custom query tools are functional.
+* Check logs for query entries.
+
+*Priority:* High
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 5.1.2.1
+
+#### Media viewer
+
+*As a* user, 
+*I want* to use a media viewer 
+*so that* I can visualize multimedia data.
+
+*Definition of Done:*
+
+* Media viewer is implemented and functional.
+* Users can visualize multimedia data.
+* Logs confirm the functionality of the media viewer.
+
+*Acceptance Criteria:*
+
+* Verify that the media viewer is functional.
+* Check logs for media viewer entries.
+
+*Priority:* Low
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 7.1.3.3

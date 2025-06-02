@@ -1,0 +1,7 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "^https://github.com/david-i-berry/cdms_bdd_requirements/tree/"
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+### Configuration
+
+#### Create / update user defined business rules
+
+*As a* user,
+*I want* to specify business rules for the system
+*so that* data processing aligns with my requirements.
+
+*Definition of Done:*
+
+* Business rules can be specified and modified.
+* Rules are applied during data processing.
+* Logs confirm the application of business rules.
+
+*Acceptance Criteria:*
+
+* Verify that business rules can be specified and modified.
+* Check logs for rule application entries.
+
+*Priority:* High
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 5.1.1.1
+
+#### Create / update QC checks
+
+*As a* user,
+*I want* to create, modify, and delete QC checks
+*so that* I can ensure data quality.
+
+*Definition of Done:*
+
+* QC checks can be created, modified, and deleted.
+* QC checks are applied during data processing.
+* Logs confirm the application of QC checks.
+
+*Acceptance Criteria:*
+
+* Verify that QC checks can be managed correctly.
+* Check logs for QC check entries.
+
+*Priority:* High
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 5.3.2.1
+
+#### QC management / assignment
+
+*As a* user,
+*I want* to assign QC checks to specific variables, stations, etc.,
+*so that* data quality is maintained across different datasets.
+
+*Definition of Done:*
+
+* QC checks can be assigned to specific variables and stations.
+* Assigned QC checks are applied during data processing.
+* Logs confirm the assignment and application of QC checks.
+
+*Acceptance Criteria:*
+
+* Verify that QC checks can be assigned correctly.
+* Check logs for QC check assignment entries.
+
+*Priority:* Medium
+
+*Dependencies:* QC check creation
+
+*WMO-No 1131 requirements:* 5.3.2.2
+
+#### Scheduling
+
+*As a* user,
+*I want* to schedule QC checks
+*so that* data quality is consistently monitored.
+
+*Definition of Done:*
+
+* QC checks can be scheduled.
+* Scheduled QC checks are executed as planned.
+* Logs confirm the execution of scheduled QC checks.
+
+*Acceptance Criteria:*
+
+* Verify that QC checks can be scheduled and executed.
+* Check logs for scheduled QC check entries.
+
+*Priority:* Medium
+
+*Dependencies:* QC check creation
+
+*WMO-No 1131 requirements:* 5.3.2.3

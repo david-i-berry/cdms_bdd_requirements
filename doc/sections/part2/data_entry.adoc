@@ -1,0 +1,93 @@
+### Data entry
+
+#### Form design
+
+*As a* user,
+*I want* to design forms for observations
+*so that* data entry is streamlined and efficient.
+
+*Definition of Done:*
+
+* Forms are designed and implemented.
+* Forms are user-friendly and functional.
+* Users can enter data efficiently using the forms.
+
+*Acceptance Criteria:*
+
+* Verify that forms are functional and user-friendly.
+* Test data entry using the forms.
+
+*Priority:* Medium
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 5.2.3.1
+
+#### Form entry
+
+*As a* user,
+*I want* to enter data through forms and key entry
+*so that* I can input observations accurately.
+
+*Definition of Done:*
+
+* Data entry forms are functional and accessible.
+* Data is entered accurately and stored correctly.
+* Logs confirm successful data entry.
+
+*Acceptance Criteria:*
+
+* Verify that data entry is accurate and stored correctly.
+* Check logs for data entry entries.
+
+*Priority:* High
+
+*Dependencies:* Form design
+
+*WMO-No 1131 requirements:* 5.2.3.2, 5.5.1.1, 5.5.1.2)
+
+#### Calculation of derived paramaters
+
+*As a* user,
+*I want* the system to calculate derived parameters during data entry
+*so that* I can obtain additional insights from the data.
+
+*Definition of Done:*
+
+* Derived parameters are calculated during data entry.
+* Calculated parameters are available for use.
+* Logs confirm the calculation of derived parameters.
+
+*Acceptance Criteria:*
+
+* Verify that derived parameters are calculated correctly.
+* Check logs for parameter calculation entries.
+
+*Priority:* Medium
+
+*Dependencies:* Data entry functionality
+
+*WMO-No 1131 requirements:* 4.5.1.2, 5.2.3.3
+
+#### Metadata entry
+
+*As a* user,
+*I want* to create, update, and delete metadata
+*so that* I can manage discovery, access, retrieval, station/observational, and provenance metadata effectively.
+
+*Definition of Done:*
+
+* Metadata can be created, updated, and deleted.
+* Changes to metadata are logged.
+* Metadata management functions are accessible and functional.
+
+*Acceptance Criteria:*
+
+* Verify that metadata can be managed correctly.
+* Check logs for metadata management entries.
+
+*Priority:* High
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 5.5.1.1, 5.5.1.2

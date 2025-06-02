@@ -1,0 +1,63 @@
+== Introduction
+
+=== Purpose
+
+The purpose of this document is to define the functional requirements for a basic Climate Data Management System (CDMS)
+and is intended to complement the WMO Climate Data Management System Specifications (WMO-No. 1131).
+The requirements described are designed to manage, store, and process climate-related observational data, ensuring high
+data quality and integrity through robust data management practices and quality control mechanisms.
+Advanced functionality is considered out of scope and to ensure broad support and simplicity the data are assumed to be
+stored and managed within a relational database management system. Whilst alternative technologies exists, these are
+also considered out of scope.
+
+=== Scope
+This document covers the functional requirements for the following key components of the CDMS:
+
+* Data entry and ingestion
+* User Configuration
+* Monitoring
+* Metadata Management
+* Analysis and Processing
+* User Interface
+* Security
+
+=== Overview
+The CDMS is a modular system composed of various tools and services that work together to manage climate data. The system will support the ingestion of multiple data formats, validate and transform data, and store it in a relational database. It will also provide tools for data entry, user configuration, monitoring, metadata management, analysis, and processing. The system will implement robust security measures to protect data and ensure compliance with regulatory requirements.
+
+=== Key Functions
+
+==== Data storage and management
+
+The CDMS will use a relational database management system (RDBMS) to store and manage climate data.
+The RDBMS will provide the following functionalities:
+
+* Data Storage: Efficient storage of various types of climate data, including observational data, derived parameters, and metadata.
+* Data Integrity: Enforcement of data integrity constraints (e.g., primary keys, foreign keys, unique constraints) to ensure data consistency.
+
+The following non-functional requirements will also be taken into account:
+
+* Efficient Querying: Support for efficient querying of large datasets using SQL, with indexes created on key columns to optimize query performance.
+* Secure Access: Implementation of role-based access control to ensure that only authorized users can access or modify the data.
+Data encryption will be applied to sensitive data both at rest and in transit.
+* Backup and Recovery: Support for regular data backups to prevent data loss, with automated recovery processes in place to restore data in case of failures.
+* Scalability: Ability to handle large volumes of data and scale as needed to accommodate growing datasets.
+
+==== Application and Management of Quality Control (QC)
+The CDMS will implement comprehensive quality control (QC) processes to maintain data accuracy and reliability. The QC processes will include:
+
+* Business Rules and QC Checks: Users can specify business rules and manage QC checks. The system will allow for the creation, modification, and deletion of QC checks, assignment of QC checks to specific variables or stations, and scheduling of QC checks.
+* Data Validation: During data ingestion and entry, the system will validate data formats, apply constraint checks, consistency checks, statistical checks, and spatial checks to ensure data quality.
+* Monitoring and Alerts: The system will provide tools to monitor data quality and generate alerts for any data quality issues. Users can view QC metrics to assess the effectiveness of quality control processes.
+* Advanced QC Functions: The system will perform comparison checks, combination checks, and multilayer QC flags to thoroughly assess data quality. It will also include a media viewer for visualizing multimedia data and perform homogenization to ensure data consistency.
+
+//  === User Acceptance Testing (UAT)
+
+// User Acceptance Testing (UAT) will be conducted to ensure that the CDMS meets the functional requirements and performs as expected. UAT will involve the following steps:
+
+// * Test Planning: Define test objectives, scope, and criteria for acceptance.
+// * Test Design: Develop test cases and scenarios based on the functional requirements.
+// * Test Execution: Execute test cases and document the results.
+// * Issue Resolution: Identify and resolve any issues or defects found during testing.
+// * Test Closure: Review test results and obtain user acceptance.
+
+// By implementing a robust CDMS with a focus on data management within a relational database and comprehensive quality control processes, we aim to provide a reliable and efficient solution for managing climate data.

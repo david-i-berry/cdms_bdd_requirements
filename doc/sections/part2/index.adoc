@@ -1,0 +1,21 @@
+== User stories
+
+include::rdbms.adoc[]
+
+include::data_ingest.adoc[]
+
+include::data_entry.adoc[]
+
+include::configuration.adoc[]
+
+include::monitoring.adoc[]
+
+include::metadata_management.adoc[]
+
+include::security.adoc[]
+
+include::user_interface.adoc[]
+
+include::analysis_and_processing.adoc[]
+
+

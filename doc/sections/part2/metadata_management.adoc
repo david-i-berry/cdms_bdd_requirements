@@ -1,0 +1,70 @@
+### Metadata management
+
+#### OSCAR/Surface synchronization
+
+*As a* user, 
+*I want* to synchronize and compare WIGOS metadata with OSCAR/Surface 
+*so that* metadata consistency is maintained.
+
+*Definition of Done:*
+
+* Metadata synchronization and comparison tools are available and functional.
+* Metadata consistency is maintained.
+* Logs confirm the synchronization and comparison of metadata.
+
+*Acceptance Criteria:*
+
+* Verify that metadata synchronization and comparison tools are functional.
+* Check logs for synchronization and comparison entries.
+
+*Priority:* High
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 5.5.2.1
+
+#### Metadata quality metrics
+
+*As a* user, 
+*I want* to view metrics on the quality and completeness of metadata 
+*so that* I can ensure metadata standards are met.
+
+*Definition of Done:*
+
+* Metadata quality and completeness metrics are available and accessible.
+* Metrics provide clear insights into metadata standards.
+* Logs confirm the availability of metadata metrics.
+
+*Acceptance Criteria:*
+
+* Verify that metadata quality and completeness metrics are available and accessible.
+* Check logs for metric entries.
+
+*Priority:* Medium
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 5.5.1.3, 5.5.1.4
+
+#### Metadata search
+
+*As a* user, 
+*I want* to search the metadata catalogue 
+*so that* I can easily find relevant metadata.
+
+*Definition of Done:*
+
+* Metadata catalogue search tools are available and functional.
+* Users can find relevant metadata quickly and easily.
+* Logs confirm the functionality of metadata catalogue search.
+
+*Acceptance Criteria:*
+
+* Verify that metadata catalogue search tools are functional.
+* Check logs for search entries.
+
+*Priority:* High
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 7.1.4.3, 7.1.4.4, 8.2.1.1, 8.2.1.2

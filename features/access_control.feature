@@ -1,8 +1,8 @@
 Feature: Role-based Access Control
 
-        In order to protect sensitive data
-        As a system administrator
-        I want to control access based on user roles
+    In order to protect sensitive data
+    As a system administrator
+    I want to control access based on user roles
 
     Scenario: Access control for restricted data
         Given a user with specific role permissions
@@ -44,3 +44,5 @@ Feature: Role-based Access Control
         And track usage against any quantity limitations
         And ensure appropriate attribution is captured
         And generate reports on external data access for data owners
+
+

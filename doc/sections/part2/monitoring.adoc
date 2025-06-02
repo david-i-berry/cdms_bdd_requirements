@@ -1,0 +1,70 @@
+### Monitoring
+
+#### Observing network monitoring
+
+*As a* user, 
+*I want* to monitor the observing network 
+*so that* I can ensure data collection is functioning correctly.
+
+*Definition of Done:*
+
+* Monitoring tools are available and functional.
+* Observing network status is updated in real-time.
+* Logs confirm the monitoring of the observing network.
+
+*Acceptance Criteria:*
+
+* Verify that monitoring tools are functional.
+* Check logs for observing network status updates.
+
+*Priority:* High
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 5.3.2.4
+
+#### Data monitoring
+
+*As a* user, 
+*I want* to monitor data 
+*so that* I can track its quality and integrity.
+
+*Definition of Done:*
+
+* Data monitoring tools are available and functional.
+* Data quality and integrity are tracked and reported.
+* Logs confirm the monitoring of data.
+
+*Acceptance Criteria:*
+
+* Verify that data monitoring tools are functional.
+* Check logs for data quality and integrity reports.
+
+*Priority:* High
+
+*Dependencies:* None
+
+*WMO-No 1131 requirements:* 5.3.3.1
+
+#### QC metrics viewer
+
+*As a* user, 
+*I want* to view QC metrics 
+*so that* I can assess the quality control processes.
+
+*Definition of Done:*
+
+* QC metrics are available and accessible.
+* QC metrics provide clear insights into quality control processes.
+* Logs confirm the availability of QC metrics.
+
+*Acceptance Criteria:*
+
+* Verify that QC metrics are available and accessible.
+* Check logs for QC metric entries.
+
+*Priority:* Medium
+
+*Dependencies:* QC checks
+
+*WMO-No 1131 requirements:* 5.4.3.1

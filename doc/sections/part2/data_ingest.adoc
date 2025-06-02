@@ -1,0 +1,250 @@
+### Data Entry and Ingestion
+
+[plantuml]
+....
+@startuml
+rectangle "US-001\nData entry" as US001
+rectangle "US-002\nFile based input" as US002
+rectangle "US-003\nValidation" as US003
+rectangle "US-004\nData Ingestion" as US004
+
+rectangle "US-005\nLogging" as US005
+rectangle "US-006\nTransformation" as US006
+rectangle "US-007\nQuality control" as US007
+rectangle "US-008\nApplication of business rules" as US008
+rectangle "US-009\nCalculation of derived parameters" as US009
+
+US001 --> US003
+US002 --> US003
+US003 --> US004
+US003 --> US005
+@enduml
+....
+
+
+CADC - RCCs do they have a CDMS
+- KNMI hosting ICA&D, 50k for 1 year.
+
+
+
+### Data entry [ID: US-001]
+
+*As a* user,
+*I want* to enter data through forms and key entry
+*so that* I can input observations accurately.
+
+*Definition of Done:*
+
+* Data entry forms are functional and accessible.
+* System validates the input before  processing.
+* Data is entered accurately and stored correctly in the database.
+* Logs confirm successful data entry.
+
+*Acceptance Criteria:*
+
+* Verify that data entry is accurate and stored correctly.
+* Check logs for data entry entries.
+
+*Priority:* High
+
+*Dependencies:* Form design
+
+*Required for*:
+
+*WMO-No 1131 requirements:* 5.2.3.2, 5.5.1.1, 5.5.1.2)
+
+#### File based input [ID: US-002]
+
+*As a* user,
+*I want* to load meteorological data directly from files on my local system or network drives
+*so that* I can quickly import large datasets without manual data entry.
+
+*Definition of Done:*
+
+* File selection interface is implemented and functional
+* Files can be loaded from local and network locations
+* Progress indication is provided during loading
+* System validates file format before processing
+* Loading status and results are reported to the user
+
+*Acceptance Criteria:*
+
+* User can browse and select files via a standard file picker dialog
+* System accepts multiple file selection for batch processing
+* System correctly identifies and loads files in supported formats (BUFR, GRIB, TAC)
+* System provides appropriate error messages for unsupported or corrupted files
+* Loading process can be canceled by the user if needed
+* File loading performance meets specified thresholds (X MB per minute)
+
+*Priority:* High
+
+*Dependencies:* None
+
+*Required for:* Data Ingestion [US-002]
+
+*WMO-No 1131 requirements:* 5.1.1.2, 5.1.1.3, 5.1.1.4
+
+
+
+#### Ingestion
+
+*As a* user,
+*I want* the system to ingest various data formats (BUFR, GRIB, TAC, etc.)
+*so that* I can work with diverse datasets.
+
+*Definition of Done:*
+
+* The system can successfully ingest all specified data formats.
+* Ingestion logs are created and accessible.
+* Data is available for further processing.
+
+*Acceptance Criteria:*
+
+* Verify ingestion of each data format.
+* Check logs for successful ingestion entries.
+
+*Priority:* High
+
+*Dependencies:* None
+
+*Required for*:
+
+*WMO-No 1131 requirements:* 5.1.1.2, 5.1.1.3, 5.1.1.4, 5.1.1.5, 5.1.1.6
+
+#### Logging
+
+*As a* user,
+*I want* the system to log the status of data ingestion
+*so that* I can monitor the ingestion process.
+
+*Definition of Done:*
+
+* Ingestion status is logged for each data file.
+* Logs are accessible and provide clear status updates.
+
+*Acceptance Criteria:*
+
+* Verify that logs are created for each ingestion attempt.
+* Ensure logs are accessible and readable.
+
+*Priority:* High
+
+*Dependencies:* Data ingestion functionality
+
+*WMO-No 1131 requirements:* 5.1.1.7
+
+#### Automated recovery
+
+*As a* user,
+*I want* the system to perform automated recovery on failed ingests
+*so that* data integrity is maintained.
+
+*Definition of Done:*
+
+* Automated recovery processes are triggered on ingestion failure.
+* Recovery attempts are logged.
+* Data is successfully ingested or appropriate error messages are provided.
+
+*Acceptance Criteria:*
+
+* Simulate ingestion failures and verify recovery processes.
+* Check logs for recovery attempts and outcomes.
+
+*Priority:* Medium
+
+*Dependencies:* Data ingestion functionality
+
+*WMO-No 1131 requirements:* 5.1.1.8
+
+#### Application of business rules
+
+*As a* user,
+*I want* the system to apply user-specified business rules during data ingestion
+*so that* the data is processed according to my requirements.
+
+*Definition of Done:*
+
+* Business rules are applied during ingestion.
+* Data is processed according to specified rules.
+* Logs confirm the application of business rules.
+
+*Acceptance Criteria:*
+
+* Verify that business rules are applied correctly.
+* Check logs for rule application entries.
+
+*Priority:* High
+
+*Dependencies:* User configuration of business rules
+
+*WMO-No 1131 requirements:* 5.1.1.1
+
+#### Data transformations
+
+*As a* user,
+*I want* the system to apply data transformations during ingestion
+*so that* the data is in the desired format.
+
+*Definition of Done:*
+
+* Data transformations are applied as specified.
+* Transformed data is available for use.
+* Logs confirm successful data transformation.
+
+*Acceptance Criteria:*
+
+* Verify that data transformations are applied correctly.
+* Check logs for transformation entries.
+
+*Priority:* Medium
+
+*Dependencies:* Data ingestion functionality
+
+*WMO-No 1131 requirements:* 5.1.1.9
+
+#### Validation and quality control
+
+*As a* user,
+*I want* the system to validate data formats, apply constraint checks, consistency checks, statistical checks,
+comparison checks, combination checks and spatial checks during ingestion
+*so that* the data quality is ensured.
+
+*Definition of Done:*
+
+* All specified checks are applied during ingestion.
+* Data quality is validated and confirmed.
+* Logs detail the results of each check.
+
+*Acceptance Criteria:*
+
+* Verify that all checks are applied correctly.
+* Check logs for validation and check entries.
+
+*Priority:* High
+
+*Dependencies:* Data ingestion functionality
+
+*WMO-No 1131 requirements:* 5.3.1.1, 5.3.1.2, 5.3.1.3, 5.3.1.4, 5.3.1.5, 5.3.17, 5.3.1.9
+
+#### Calculation of derived paramaters
+
+*As a* user,
+*I want* the system to calculate derived parameters during data ingestion
+*so that* I have access to additional useful information.
+
+*Definition of Done:*
+
+* Derived parameters are calculated during ingestion.
+* Calculated parameters are available for use.
+* Logs confirm the calculation of derived parameters.
+
+*Acceptance Criteria:*
+
+* Verify that derived parameters are calculated correctly.
+* Check logs for parameter calculation entries.
+
+*Priority:* Medium
+
+*Dependencies:* Data ingestion functionality
+
+*WMO-No 1131 requirements:* 4.5.1.2
